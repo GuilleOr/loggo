@@ -5,8 +5,7 @@ import (
 	"encoding/json"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
-	"sa-logging/config"
-	"sa-logging/logger"
+	"loggo/config"
 )
 
 

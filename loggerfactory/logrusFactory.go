@@ -2,8 +2,8 @@ package loggerfactory
 
 import (
 	"github.com/pkg/errors"
-	"sa-logging/config"
-	"sa-logging/loggerfactory/logrus"
+	"loggo/config"
+	"loggo/loggerfactory/logrus"
 )
 
 // receiver for logrus factory

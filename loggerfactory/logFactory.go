@@ -2,7 +2,7 @@
 package loggerfactory
 
 import (
-	"sa-logging/config"
+	"loggo/config"
 )
 
 // logger mapp to map logger code to logger builder

@@ -2,9 +2,8 @@ package loggo
 
 import (
 	"github.com/pkg/errors"
-	"sa-logging/config"
-	loggo "sa-logging/logger"
-	"sa-logging/loggerfactory"
+	"loggo/config"
+	loggo "loggo/logger"
 )
 
 func NewLogo() loggo.Logger {

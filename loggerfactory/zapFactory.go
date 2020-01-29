@@ -2,8 +2,8 @@ package loggerfactory
 
 import (
 	"github.com/pkg/errors"
-	"sa-logging/config"
-	"sa-logging/loggerfactory/zap"
+	"loggo/config"
+	"loggo/loggerfactory/zap"
 )
 
 // receiver for zap factory

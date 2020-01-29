@@ -6,9 +6,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/sohlich/elogrus.v7"
-
-	"sa-logging/config"
-	"sa-logging/logger"
+	"loggo/config"
+	"loggo/logger"
 )
 
 func RegisterLog(lc config.LogConfig) error {
