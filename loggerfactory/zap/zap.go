@@ -3,9 +3,10 @@ package zap
 
 import (
 	"encoding/json"
+	"github.com/GuilleOr/loggo/config"
+	"github.com/GuilleOr/loggo/logger"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
-	"loggo/config"
 )
 
 

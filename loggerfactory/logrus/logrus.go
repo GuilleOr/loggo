@@ -2,12 +2,12 @@
 package logrus
 
 import (
+	"github.com/GuilleOr/loggo/config"
+	"github.com/GuilleOr/loggo/logger"
 	"github.com/olivere/elastic/v7"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/sohlich/elogrus.v7"
-	"loggo/config"
-	"loggo/logger"
 )
 
 func RegisterLog(lc config.LogConfig) error {

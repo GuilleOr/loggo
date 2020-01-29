@@ -1,9 +1,9 @@
 package loggerfactory
 
 import (
+	"github.com/GuilleOr/loggo/config"
+	"github.com/GuilleOr/loggo/loggerfactory/zap"
 	"github.com/pkg/errors"
-	"loggo/config"
-	"loggo/loggerfactory/zap"
 )
 
 // receiver for zap factory

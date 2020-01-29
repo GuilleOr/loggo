@@ -2,7 +2,7 @@
 package loggerfactory
 
 import (
-	"loggo/config"
+	"github.com/GuilleOr/loggo/config"
 )
 
 // logger mapp to map logger code to logger builder

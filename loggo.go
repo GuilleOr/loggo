@@ -1,10 +1,10 @@
 package loggo
 
 import (
+	"github.com/GuilleOr/loggo/config"
+	loggo "github.com/GuilleOr/loggo/logger"
 	"github.com/GuilleOr/loggo/loggerfactory"
 	"github.com/pkg/errors"
-	"loggo/config"
-	loggo "loggo/logger"
 )
 
 func NewLogo() loggo.Logger {
