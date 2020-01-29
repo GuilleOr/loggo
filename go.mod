@@ -1,4 +1,4 @@
-module github.com/GuilleOr/loggo
+module github.com/GuilleOr/loggo/loggo
 
 go 1.13
 
