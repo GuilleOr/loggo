@@ -1,6 +1,7 @@
 package loggo
 
 import (
+	"github.com/GuilleOr/loggo/loggerfactory"
 	"github.com/pkg/errors"
 	"loggo/config"
 	loggo "loggo/logger"
