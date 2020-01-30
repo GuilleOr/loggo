@@ -20,15 +20,18 @@ func validateConfig(appConfig AppConfig) error {
 }
 
 func validateLogger(appConfig AppConfig) error {
-	zc := appConfig.ZapConfig
-	key := zc.Code
 	zcMsg := " in validateLogger doesn't match key = "
+
+	/*zc := appConfig.ZapConfig
+	key := zc.Code
 	if ZAP != key {
 		errMsg := ZAP + zcMsg + key
 		return errors.New(errMsg)
 	}
+	 */
+
 	lc := appConfig.LogrusConfig
-	key = lc.Code
+	key := lc.Code
 	if LOGRUS != lc.Code {
 		errMsg := LOGRUS + zcMsg + key
 		return errors.New(errMsg)
