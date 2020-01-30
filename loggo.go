@@ -7,6 +7,11 @@ import (
 	"github.com/pkg/errors"
 )
 
+func main() {
+	logo := NewLogo()
+	logo.Debug("lala")
+}
+
 func NewLogo() loggo.Logger {
 	err := initApp()
 	if err != nil {
@@ -19,10 +24,16 @@ func NewLogo() loggo.Logger {
 // TODO load external config file
 func initApp() error {
 	var err error
-	appConfig, err := loadConfig("config/config.yml")
+	appConfig, err := loadConfig("loggo/config/config.yml")
 	if err != nil {
 		return errors.Wrap(err, "loadConfig")
 	}
+
+	//TODO
+	appConfig.LogrusConfig.Code="logrus"
+	appConfig.LogrusConfig.Level="debug"
+	appConfig.LogrusConfig.EnableCaller = true
+
 	err = loadLogger(appConfig.LogrusConfig)
 	if err != nil {
 		return errors.Wrap(err, "loadLogger")
