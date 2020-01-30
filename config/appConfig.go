@@ -4,7 +4,6 @@
 package config
 
 import (
-	"fmt"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
@@ -43,10 +42,12 @@ func ReadConfig(filename string) (*AppConfig, error) {
 	if err != nil {
 		return nil, errors.Wrap(err, "unmarshal")
 	}
+	/*
 	err = validateConfig(ac)
 	if err != nil {
 		return nil, errors.Wrap(err, "validate config")
 	}
 	fmt.Println("appConfig:", ac)
+	 */
 	return &ac, nil
 }
