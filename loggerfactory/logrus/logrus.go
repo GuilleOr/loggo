@@ -19,13 +19,13 @@ func RegisterLog(lc config.LogConfig) error {
 		log.Panic(err)
 	}
 
-	hook, err := elogrus.NewAsyncElasticHook(client, "localhost", logrus.DebugLevel, "mylog")
+	hook, err := elogrus.NewAsyncElasticHook(client, "localhost", logrus.DebugLevel, "app_kyru_log")
 	if err != nil {
 		log.Panic(err)
 	}
 
 
-	log.SetFormatter(&logrus.TextFormatter{})
+	log.SetFormatter(&logrus.JSONFormatter{})
 	log.SetReportCaller(true)
 	//log.SetOutput(os.Stdout)
 	//customize it from configuration file
@@ -40,10 +40,6 @@ func RegisterLog(lc config.LogConfig) error {
 		logrus.Errorf(" error: %q", err)
 	}
 
-	log.WithFields(logrus.Fields{
-		"name": "joe",
-		"age":  42,
-	}).Error("Hello world!")
 	logger.SetLogger(log)
 	return nil
 }
